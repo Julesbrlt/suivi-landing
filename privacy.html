@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suivi — Politique de confidentialité</title>
+<style>
+  :root {
+    --bg: #F6F5F1;
+    --surface: #FFFFFF;
+    --border: #E4E1DA;
+    --ink: #1C1B19;
+    --ink-2: #4A463F;
+    --ink-3: #6B675F;
+    --accent: #2F4B7C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  .updated { color: var(--ink-3); margin: 0 0 40px; font-size: 0.9rem; }
+  h2 { font-size: 1.05rem; margin: 32px 0 10px; }
+  p, li { color: var(--ink-2); }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 40px; color: var(--ink-3); font-size: 0.9rem; }
+  a.back { display: inline-block; margin-bottom: 24px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Suivi</a>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 28 septembre 2026</p>
+
+    <p>Suivi est un projet personnel à usage strictement individuel : une seule personne utilise l'application, pour suivre ses propres candidatures. Il n'y a ni compte tiers, ni service commercial, ni partage de données avec qui que ce soit.</p>
+
+    <h2>Données consultées</h2>
+    <ul>
+      <li><strong>Gmail (lecture seule — <code>gmail.readonly</code>)</strong> : l'application lit les e-mails identifiés comme liés à une recherche d'emploi (confirmations de candidature, réponses de recruteurs, invitations à un entretien) pour en extraire l'entreprise, le poste et le statut. Elle ne peut ni envoyer, ni modifier, ni supprimer de message.</li>
+      <li><strong>Google Agenda (<code>calendar.events</code>)</strong> : lorsqu'un entretien est détecté dans un e-mail, l'application peut créer un évènement correspondant dans l'agenda Google du compte concerné.</li>
+    </ul>
+
+    <h2>Utilisation des données</h2>
+    <p>Les informations extraites (entreprise, poste, statut, dates d'entretien, contacts) sont stockées dans une base de données privée, accessible uniquement à la personne qui utilise l'application. Le contenu des e-mails est traité pour en extraire ces informations et n'est jamais transmis à un tiers, ni utilisé à des fins publicitaires.</p>
+
+    <h2>Sécurité et conservation</h2>
+    <p>Les jetons d'accès Google et le contenu des e-mails sont chiffrés au repos. Un bouton permet de révoquer l'accès à Gmail et de supprimer les données stockées à tout moment.</p>
+
+    <h2>Révocation de l'accès</h2>
+    <p>L'accès de l'application à un compte Google peut être révoqué à tout moment depuis <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">la page des accès tiers du compte Google</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Pour toute question : <a href="mailto:julesdemassalia@gmail.com">julesdemassalia@gmail.com</a></p>
+
+    <footer>Suivi — projet personnel, code source privé.</footer>
+  </div>
+</body>
+</html>

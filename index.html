@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suivi</title>
+<style>
+  :root {
+    --bg: #F6F5F1;
+    --surface: #FFFFFF;
+    --border: #E4E1DA;
+    --ink: #1C1B19;
+    --ink-2: #4A463F;
+    --ink-3: #6B675F;
+    --accent: #2F4B7C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 {
+    font-size: 2.25rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--ink-3);
+    margin: 0 0 40px;
+    font-size: 1.05rem;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-2);
+    margin: 0 0 10px;
+  }
+  p { margin: 0 0 12px; color: var(--ink-2); }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 40px;
+    color: var(--ink-3);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Suivi</h1>
+    <p class="tagline">Un outil personnel pour suivre une recherche d'emploi directement depuis la boîte mail.</p>
+
+    <div class="card">
+      <h2>Ce que fait l'app</h2>
+      <p>Suivi lit les e-mails liés aux candidatures (confirmations de candidature, réponses, invitations à un entretien) pour tenir à jour automatiquement le statut de chaque candidature, sans tableur à remplir à la main.</p>
+      <p>C'est un projet personnel, à usage strictement individuel : une seule personne l'utilise, pour son propre suivi de candidatures.</p>
+    </div>
+
+    <div class="card">
+      <h2>Accès à Gmail et à l'agenda</h2>
+      <p>L'application accède à Gmail en lecture seule (elle ne peut ni envoyer ni supprimer de message) pour détecter les e-mails liés aux candidatures. Elle peut créer des évènements dans Google Agenda lorsqu'un entretien est détecté dans un e-mail.</p>
+      <p>Voir la <a href="privacy.html">politique de confidentialité</a> pour le détail des données concernées.</p>
+    </div>
+
+    <footer>
+      Projet personnel — code source privé. Contact : <a href="mailto:julesdemassalia@gmail.com">julesdemassalia@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
